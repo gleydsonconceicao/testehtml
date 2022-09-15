@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+            //string 
+            let tituloArtigo = 'Como utilizar res/spread'
+            console.log(tituloArtigo)
+            console.log(...tituloArtigo)
+            console.log([...tituloArtigo])
+
+            let listaCursos1 = ['Bidehs e mongoDb', 'angular']
+            let listaCursos2 = ['solid', 'laravel']
+            let listCompletaCursos = ['web completo', 'banco de dados', ...listaCursos1, ...listaCursos2]
+            let pessoa = {nome: 'Pedor', idade: 32}
+            let cadastroCompleto = {endereco: 'Rua Abc', ...pessoa}
+            console.log(cadastroCompleto)
+        </script>
+    </body>
+</html>
